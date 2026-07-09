@@ -27,6 +27,9 @@ module.exports.showListings = async (req, res) => {
 
 
 module.exports.createListing = async (req, res) => {
+  console.log("Reached createListing");
+  console.log(req.body);
+  console.log(req.file);
 
   let url = req.file.path;
   let filename = req.file.filename;
